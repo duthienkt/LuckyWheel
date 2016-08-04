@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>TestHtml</title>
+	<button onclick="set_string("tst")"> Clear All</button>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+
+    <script src="sketch.js" type="text/javascript"></script>
+	<script type="text/javascript>
+	 var processingInstance;
+        function clearAll() {
+             if (!processingInstance) {
+                 processingInstance = Processing.getInstanceById('mysketch');
+             }
+             processingInstance.set_string("ajjsf");
+           
+            };
+	</script>
+    <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
+  </head>
+  <body>
+  </body>
+</html>
